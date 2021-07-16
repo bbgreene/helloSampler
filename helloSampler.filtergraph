@@ -65,7 +65,7 @@
           uiLastY_Normal="480" uiopen_Normal="1">
     <PLUGIN name="helloSampler" format="VST3" category="Instrument|Synth"
             manufacturer="yourcompany" version="1.0.0" file="/Users/programming/Library/Audio/Plug-Ins/VST3/helloSampler.vst3"
-            uid="acf431d1" isInstrument="1" fileTime="17a8b17c419" infoUpdateTime="17a8b3cb5ce"
+            uid="acf431d1" isInstrument="1" fileTime="17a8b17c419" infoUpdateTime="17aaed36991"
             numInputs="0" numOutputs="2" isShell="0"/>
     <STATE>191.VMjLgXK....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9XCLt3hKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYjKAQjYPQSPWgUdMcjKAQjct3hdA4hKt3hKt3hKtnTUv.UQAslXuk0UXoWUFE0YQcEV77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
     <LAYOUT>
@@ -75,6 +75,7 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
+  <CONNECTION srcFilter="2" srcChannel="4096" dstFilter="8" dstChannel="4096"/>
   <CONNECTION srcFilter="8" srcChannel="0" dstFilter="3" dstChannel="0"/>
   <CONNECTION srcFilter="8" srcChannel="1" dstFilter="3" dstChannel="1"/>
 </FILTERGRAPH>
