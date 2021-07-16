@@ -193,7 +193,7 @@ void HelloSamplerAudioProcessor::loadFile()
                                               60,
                                               0.1,
                                               0.1,
-                                              10.0) );
+                                              30.0) );
 }
 
 void HelloSamplerAudioProcessor::loadFile(const juce::String& path)
@@ -219,7 +219,7 @@ void HelloSamplerAudioProcessor::loadFile(const juce::String& path)
                                               60,
                                               0.1,
                                               0.1,
-                                              10.0) );
+                                              30.0) );
     
 }
 
