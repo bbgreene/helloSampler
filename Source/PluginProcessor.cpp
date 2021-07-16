@@ -140,6 +140,8 @@ void HelloSamplerAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer,
     juce::ScopedNoDenormals noDenormals;
     auto totalNumInputChannels  = getTotalNumInputChannels();
     auto totalNumOutputChannels = getTotalNumOutputChannels();
+    
+    getADSRValue();
 
 
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
@@ -221,6 +223,11 @@ void HelloSamplerAudioProcessor::loadFile(const juce::String& path)
                                               0.1,
                                               10.0) );
     
+}
+
+void HelloSamplerAudioProcessor::getADSRValue()
+{
+    DBG("Attack: " << attack << " Decay: " << decay << " Sustain: " << sustain << " Release: " << release);
 }
 //==============================================================================
 // This creates new instances of the plugin..
