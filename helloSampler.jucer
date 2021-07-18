@@ -18,6 +18,9 @@
             file="Source/ADSRComponent.cpp"/>
       <FILE id="hISBKc" name="ADSRComponent.h" compile="0" resource="0" file="Source/ADSRComponent.h"/>
     </GROUP>
+    <GROUP id="{182C56EC-1DB4-C600-3C12-69E3A5A7D97A}" name="Resources">
+      <FILE id="FZ9X13" name="IMG_1388.JPG" compile="0" resource="1" file="Resources/IMG_1388.JPG"/>
+    </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
   <EXPORTFORMATS>

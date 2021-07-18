@@ -16,8 +16,16 @@ HelloSamplerAudioProcessorEditor::HelloSamplerAudioProcessorEditor (HelloSampler
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
 
+    auto IMG_1388Image = juce::ImageCache::getFromMemory(BinaryData::IMG_1388_JPG, BinaryData::IMG_1388_JPGSize);
+    
+    if (! IMG_1388Image.isNull())
+        mImageComponent.setImage(IMG_1388Image, juce::RectanglePlacement::stretchToFit);
+    else
+        jassert(! IMG_1388Image.isNull());
+    
     addAndMakeVisible (mWaveThumbnail);
     addAndMakeVisible(mADSR);
+    addAndMakeVisible(mImageComponent);
     
     startTimerHz(30);
     setSize (600, 500);
@@ -43,6 +51,7 @@ void HelloSamplerAudioProcessorEditor::resized()
 {
     mWaveThumbnail.setBoundsRelative(0.0f, 0.25f, 1.0f, 0.5f);
     mADSR.setBoundsRelative(0.0f, 0.75f, 1.0f, 0.25f);
+    mImageComponent.setBoundsRelative(0.38f, 0.0f, 0.25f, 0.25f);
 }
 
 void HelloSamplerAudioProcessorEditor::timerCallback()

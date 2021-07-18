@@ -32,7 +32,7 @@ public:
 private:
     WaveThumbnail mWaveThumbnail;
     ADSRComponent mADSR;
-    
+    juce::ImageComponent mImageComponent;
     
     HelloSamplerAudioProcessor& audioProcessor;
 
